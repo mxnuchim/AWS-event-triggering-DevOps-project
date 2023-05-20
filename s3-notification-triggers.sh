@@ -17,7 +17,7 @@ echo "AWS Account ID: $aws_account_id"
 
 # Set AWS region and bucket name
 aws_region="us-east-1"
-bucket_name="S3-event-triggering"
+bucket_name="manuchim-ultimate-bucket"
 lambda_func_name="s3-lambda-function"
 role_name="s3-lambda-sns"
 email_address="manuchimoliver779@gmail.com"
@@ -111,6 +111,5 @@ aws sns subscribe \
 aws sns publish \
   --topic-arn "$topic_arn" \
   --subject "A new object created in s3 bucket" \
-  --message "Hello from Manuchim Oliver. This a new S3 event triggering project used by large companies like Netflix, Slack, Amazon, Pinterest, etc"
-
+  --message "Hello from Manuchim. This is an AWS S3 Real time Event triggering project using shell Scripting, AWS Lambda, S3, SNS, and more. This is a very popular project used by top companies in the Industry"
 
